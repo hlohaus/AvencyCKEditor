@@ -1,0 +1,32 @@
+{
+    "name": "avency/ck-editor",
+    "description": "CKEditor",
+    "version": "v1.1.0",
+    "type": "shopware-platform-plugin",
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "Avency GmbH"
+        }
+    ],
+    "require": {
+        "shopware/core": "*",
+        "shopware/administration": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "Avency\\CKEditor\\AvencyCKEditor",
+        "label": {
+            "de-DE": "CKEditor",
+            "en-GB": "CKEditor"
+        },
+        "description": {
+            "de-DE": "CKEditor for Shopware 6",
+            "en-GB": "CKEditor für Shopware 6"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Avency\\CKEditor\\": "src/"
+        }
+    }
+}

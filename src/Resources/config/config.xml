@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Avency: CKEditor</title>
+        <title lang="de-DE">Avency: CKEditor</title>
+        <input-field type="single-select">
+            <name>mediaEmbed</name>
+            <label>Media embed</label>
+            <label lang="de-DE">Media Embed</label>
+            <options>
+                <option>
+                    <id>iframely</id>
+                    <name>Iframely</name>
+                </option>
+                <option>
+                    <id>embedly</id>
+                    <name>Embedly</name>
+                </option>
+            </options>
+        </input-field>
+        <input-field type="text">
+            <name>mediaApiKey</name>
+            <label>Media Api Key</label>
+            <label lang="de-DE">Media Api Key</label>
+        </input-field>
+    </card>
+</config>

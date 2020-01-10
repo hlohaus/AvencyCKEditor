@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_body_script %}
+    {{ parent() }}
+    <script charset="utf-8"
+            src="//cdn.iframe.ly/embed.js?api_key={{ AvencyCKEditor.config.apiKey }}d1c5c8a4f7af9a0d74218f"
+    ></script>
+    <script>
+        document.querySelectorAll( 'oembed[url]' ).forEach( element => {
+            iframely.load( element, element.attributes.url.value );
+        } );
+    </script>
+{% endblock %}
